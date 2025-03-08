@@ -61,6 +61,7 @@ player_name = st.text_input("Enter Player Name:")
 if player_name in player_cluster_map:
     cluster_id = player_cluster_map[player_name]
     similar_players = df[df["Cluster"] == cluster_id][["Player", "Pos", "Squad", "Born"]]
+    similar_players["Born"] = similar_players["Born"].astype(int)
 
     if len(similar_players) >= 5:
         similar_players = similar_players.sample(5)
