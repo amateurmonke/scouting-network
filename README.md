@@ -1,6 +1,4 @@
 # Scouting Network
-
-## Overview
 Scouting Network is a machine learning-based web application that helps analyze football players and categorize them into clusters based on their performance metrics. The app allows users to enter a player's name and find similar players based on predefined statistical attributes.
 
 ## Usage
